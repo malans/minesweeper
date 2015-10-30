@@ -12,7 +12,24 @@ class Tile
     @mine
   end
 
-  def neighbor_mine_count
+  def revealed?
+    @revealed
+  end
 
+  def reveal
+    @revealed = true
+    mine_count
+  end
+
+  def flag
+    @flagged = true
+  end
+
+  def flagged?
+    @flagged
+  end
+
+  def unflag
+    @flagged = nil
   end
 end

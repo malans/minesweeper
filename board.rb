@@ -1,10 +1,13 @@
 require_relative 'tile'
+require 'colorize'
 
 class Board
+  attr_reader :mine_locations, :board
+
   def initialize
     @board = Array.new(9) {Array.new(9)}
-    mine_locations = randomize_mines
-    populate_board(mine_locations)
+    @mine_locations = randomize_mines
+    populate_board(@mine_locations)
     assign_values
   end
 
@@ -13,6 +16,7 @@ class Board
   end
 
   def [](position)
+    p position
     @board[position[0]][position[1]]
   end
 
@@ -62,16 +66,59 @@ class Board
     mine_count
   end
 
-  def render
-    # puts "  0 1 2 3 4 5 6 7 8"
-    @board.each_with_index do |row, row_idx|
-      # print ""
-      row.each do |tile|
-        if tile.has_mine?
-          print "b "
-          next
+  def reveal(position)
+    return nil if self[position].has_mine?
+    if self[position].reveal == 0
+      (-1..1).to_a.each do |row|
+        (-1..1).to_a.each do |col|
+          current_position = [position[0] + row, position[1] + col]
+          next unless in_bounds?(current_position)
+          next if current_position == position
+          reveal(current_position) unless self[current_position].revealed?
         end
-        print "#{tile.mine_count} "
+      end
+    end
+    true
+  end
+
+  def flag(position)
+    self[position].flag
+  end
+
+  def render
+    puts "  0 1 2 3 4 5 6 7 8"
+    @board.each_with_index do |row, row_idx|
+      print row_idx
+      row.each do |tile|
+        if tile.revealed?
+          print " #{tile.mine_count}".colorize(:green)
+        elsif tile.flagged?
+          print " F".colorize(:red)
+        else
+          print " *".colorize(:green)
+        end
+      end
+      puts
+    end
+
+    puts
+    puts "solution"
+
+    puts "  0 1 2 3 4 5 6 7 8"
+    @board.each_with_index do |row, row_idx|
+      print row_idx
+      row.each do |tile|
+        # if tile.revealed?
+        if tile.has_mine?
+          print " B"
+        else
+          print " #{tile.mine_count}".colorize(:green)
+        end
+        # elsif tile.flagged?
+        #   print " F".colorize(:red)
+        # else
+        #   print " *".colorize(:green)
+        # end
       end
       puts
     end
