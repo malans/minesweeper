@@ -1,0 +1,429 @@
+--- !ruby/object:Minesweeper
+board: !ruby/object:Board
+  board:
+  - - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 0
+  - - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 3
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 1
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 3
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 1
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 2
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 2
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 3
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 3
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 0
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: true
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+  - - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: true
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 1
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+    - !ruby/object:Tile
+      revealed: 
+      flagged: 
+      mine: 
+      mine_count: 0
+  mine_locations:
+  - - 3
+    - 8
+  - - 7
+    - 2
+  - - 5
+    - 2
+  - - 4
+    - 8
+  - - 4
+    - 4
+  - - 6
+    - 8
+  - - 2
+    - 6
+  - - 5
+    - 3
+  - - 1
+    - 0
+  - - 0
+    - 8
